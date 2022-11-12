@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+.calender{
+    width: 600px;
+    height: 500px;
+    /* background-color: rgb(239, 244, 244); */
+    margin: auto;
+}
+.month-year {
+    display: flex;
+}
+.month{
+    margin-right:10% ;
+}
+.month select {
+    width: 150px;
+    height: 40px;
+    padding-left: 8px;
+    /* design of arrow */
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.75rem auto;
+}
+.year select {
+    width: 150px;
+    height: 40px;
+    padding-left: 8px;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.75rem auto;
+}
+
+.weekdays {
+    margin-top: 25px;
+    font-size: 12px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    /* background-color: blanchedalmond; */
+}
+.weekdays div {
+    width: 14.28%;
+    height: 50px;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.days div{
+    width: 14.28%;
+    height: 50px;
+    padding: 15px 0;
+    text-align: center;
+    transition: all 0.4s;
+    border: 1px solid black;
+
+}
+.days div:hover {
+    background-color: rgb(65, 158, 239);
+    cursor: pointer;
+}
+.idate input {
+    margin-top: 20px;
+    width: 30%;
+    height: 35px;
+    padding-left: 8px;
+    color: #000;
+}
+.idate button {
+    width: 16%;
+    height: 35px;
+    cursor: pointer;
+    background-color: blue;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+} 
+
+.today {
+    background-color: rgb(13, 200, 13);
+}

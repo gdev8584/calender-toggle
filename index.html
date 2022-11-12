@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calender">
+            <div class="month-year">
+                <div class="month">
+                    <select id="month" name="month" form="month">
+                        <option value="select">Select Month</option>
+                        <option value="jan">JANUARY</option>
+                        <option value="feb">FEBRUARY</option>
+                        <option value="march">MARCH</option>
+                        <option value="april">APRIL</option>
+                        <option value="may">MAY</option>
+                        <option value="jun">JUNE</option>
+                        <option value="july">JULY</option>
+                        <option value="aug">AUGUST</option>
+                        <option value="sept">SEPTEMBER</option>
+                        <option value="oct">OCTOBER</option>
+                        <option value="nov">NOVEMBER</option>
+                        <option value="dec">DECEMBER</option>
+                    </select>
+                </div>
+                <div class="year">
+                    <select id="year" name="year" form="year">
+                        <option value="select">Select Year</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thur</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days"></div>
+            <div class="idate">
+                <input type="number" min="1" max="31" placeholder="Enter Any Date" id="input" autocomplete="off" />
+                <button class="btn" id="btn">ENTER</button>   
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
